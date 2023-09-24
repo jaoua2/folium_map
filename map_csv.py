@@ -13,7 +13,7 @@ coordinates_df = pd.read_csv('coordinates.csv')
 
 # Iterate through the CSV data and add markers to the map
 for index, row in coordinates_df.iterrows():
-    location = [row['latitude'], row['longitude']]
+    location = [row['longitude'], row['latitude']]
     
     # Create a CircleMarker with a red dot and a tooltip showing the latitude and longitude
     marker = folium.CircleMarker(
