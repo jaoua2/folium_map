@@ -25,7 +25,7 @@ while True :  # Update forever
         fill=True,
         fill_color='red',
         fill_opacity=1,
-        tooltip=f"Lat: {location[0]}, Lng: {location[1]}"
+        tooltip=f"Lng: {location[0]}, Lat: {location[1]}"
     )
     marker.add_to(marker_cluster)
     
