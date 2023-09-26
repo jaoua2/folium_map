@@ -11,7 +11,7 @@ marker_cluster = plugins.MarkerCluster().add_to(world_map)
 
 # Function to generate random data points
 def generate_random_data():
-    return [random.uniform(-180, 180), random.uniform(-90, 90)]
+    return [random.uniform(-90, 90), random.uniform(-180, 180)]
 
 # Update the map with new data points and save it after each update
 while True :  # Update forever
@@ -25,7 +25,7 @@ while True :  # Update forever
         fill=True,
         fill_color='red',
         fill_opacity=1,
-        tooltip=f"Lng: {location[0]}, Lat: {location[1]}"
+        tooltip=f"Lat: {location[0]}, Lon: {location[1]}"
     )
     marker.add_to(marker_cluster)
     
